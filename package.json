@@ -1,0 +1,32 @@
+{
+  "name": "BackboneQuiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test coding excersize for Backbone",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "concurrently --kill-others-on-fail \"yarn build-server\" \"yarn build-client\"",
+    "build-server": "npm install",
+    "build-client": "cd client && npm install",
+    "build-and-start": "yarn build && yarn dev && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "concurrently": "4.1.0",
+    "express": "4.16.4",
+    "node": "8.9.4"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,136 @@
+.inventory {
+  position: relative;
+  width: 80%;
+  max-width: 878px;
+  margin: 0px auto;
+  min-width: 713px;
+}
+
+.productLabels {
+  position: relative;
+  color: #76a585;
+  height: 15px;
+  text-shadow: 0px 0px .5px #6868ef;
+}
+
+.productLabels .label {
+  text-align: center;
+  width: 15%;
+  max-width: 150px;
+  display: inline-block;
+  font-size: 9px;
+  line-height: 15px;
+  letter-spacing: .3px;
+  padding-top: 5px;
+}
+
+.productLabels .label:nth-child(1) {
+  width: 35%;
+  max-width: 400px;
+  min-width: 280px;
+}
+
+.product {
+  color: #041f08;
+  margin: 7px 0px 7px 0px;
+  border: solid 1px #c7c7c7;
+  position: relative;
+}
+
+.product .cell {
+  text-align: center;
+  width: 15%;
+  max-width: 150px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+}
+
+.product .cell:nth-child(1) {
+  width: 35%;
+  max-width: 400px;
+  min-width: 280px;
+  border-right: solid 1px #c7c7c7;
+}
+
+.product .cell:nth-child(2) {
+  cursor: pointer;
+}
+
+.product .cell div{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  z-index:2;
+  right: 3px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.product .cell .glasses1{
+    background: url('../images/glasses1.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .cell .glasses2{
+    background: url('../images/glasses2.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product .cell .glasses3{
+    background: url('../images/glasses3.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.validInput{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: underline;
+  width: 15%;
+  max-width: 150px;
+  display: inline-block;
+}
+
+.invalidInput{
+  color: red;
+}
+
+.removeBttn {
+  background-image: url(./../images/red-x.png);
+  height:15px;
+  width: 15px;
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  top: calc(50% - 8px);
+}
+
+.removeBttn:hover{
+  background-size: 13px 13px;
+}
+
+.spinner-border {
+  with: 100%;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  top: 40px;
+  position: relative;
+}
