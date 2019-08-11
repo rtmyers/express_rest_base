@@ -1,6 +1,8 @@
 'use strict';
+
 const express = require('express');
 const app = express();
+
 const ProductsRouter = express.Router();
 const Products = require('./products');
 
