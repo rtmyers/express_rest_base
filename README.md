@@ -1,5 +1,5 @@
 
-## To Start run
+## To Start:
 ...
 node server.js
 ...
